@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de Restaurante</title>
+    <link rel="stylesheet" href="camareraStyle.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Pedido de Restaurante</h2>
+        <form id="pedidoForm">
+            <div class="form-group">
+                <label for="idMesa">Mesa:</label>
+                <select name="mesa" id="idMesa" class="long-select">
+                    <option value="1">Mesa 1</option>
+                    <option value="2">Mesa 2</option>
+                    <option value="3">Mesa 3</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="categoria">Categoría de Platos:</label>
+                <select name="categoria" id="categoria" class="long-select">
+                    <option value="liquidos">Líquidos</option>
+                    <option value="entrantes" selected>Entrantes</option>
+                    <option value="ensaladas">Ensaladas</option>
+                    <option value="carnes">Carnes</option>
+                </select>
+            </div>
+            <div class="menu-options" id="platos">
+                <!-- Los platos se insertarán aquí dinámicamente según la categoría seleccionada -->
+            </div>
+            <button type="submit">Enviar Pedido</button>
+        </form>
+    </div>
+    <script src="camareraScript.js"></script>
+</body>
+</html>
